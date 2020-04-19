@@ -68,6 +68,46 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-海华-AI挑战赛" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/04/19/%E6%B5%B7%E5%8D%8E-AI%E6%8C%91%E6%88%98%E8%B5%9B/" class="article-date">
+  <time datetime="2020-04-19T03:02:04.000Z" itemprop="datePublished">2020-04-19</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/04/19/%E6%B5%B7%E5%8D%8E-AI%E6%8C%91%E6%88%98%E8%B5%9B/">海华 AI挑战赛</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>几个月来一直在参与海华AI挑战赛的培训。这周也终于圆满完成了比赛，虽然我们的团队差0.04分没能进入前三名，但我们也都有很多收获。</p>
+<p>一开始上课的时候遇到了很多困难，虽说是面向中学生的AI入门，课程还是涉及到了很多没有接触过的数学知识。课后和组员讨论，额外找了一些网络上的学习资料，几周以后慢慢能理解线性回归、梯度下降之类的理论，也能自己利用开源的模型进行一些训练了。</p>
+<p>后期的课程在教安装TensorFlow时提到了CPU和GPU的特性，刚学完时对GPU在图像处理上的优势还没有什么直观的概念。后来比赛时使用CPU版本的TensorFlow运行训练集，10000张耗费的时间超过了十个小时，才尝试改用GPU进行处理。 GPU版本的TensorFlow安装相当复杂，CUDA、 cuDNN两个软件要安装，而且版本要求严苛，第一次安装时cuDNN使用了10.0版本，最后没能运行。第二次安装成功，但运行模型时还是遇到了错误，求助同组的同学后，我降级了电脑使用的Numpy，才正常运行起来。虽然安装过程遇到了许多困难，最后的成果还是令人满意的，GPU运行同样的任务只花了不到一个小时，一天内模型可以迭代多次，这为我们组的分数做出了很大的贡献。删除了数据增强的部分以后，准确率能够达到99.9%以上。但训练六次后，准确率就不再提高了，甚至下降到了98%。我尝试使用另一个预训练的模型，但是没能成功导入，成绩最后也止步于第四名。</p>
+<p>虽然没能够获得理想的成绩，但是参与比赛的过程还是收获了很多知识，对我来说是一个十分宝贵的经历。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2020/04/19/%E6%B5%B7%E5%8D%8E-AI%E6%8C%91%E6%88%98%E8%B5%9B/" data-id="ck96lpyza0000x82m22lagqno" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-TheBiggestFailure" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2020/04/13/TheBiggestFailure/" class="article-date">
@@ -222,6 +262,10 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2020/04/19/%E6%B5%B7%E5%8D%8E-AI%E6%8C%91%E6%88%98%E8%B5%9B/">海华 AI挑战赛</a>
+          </li>
         
           <li>
             <a href="/2020/04/13/TheBiggestFailure/">The Biggest Failure I&#39;ve Experienced</a>
