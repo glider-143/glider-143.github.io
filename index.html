@@ -68,6 +68,80 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-Let-GPU-Engage" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/04/25/Let-GPU-Engage/" class="article-date">
+  <time datetime="2020-04-25T14:30:20.000Z" itemprop="datePublished">2020-04-25</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/04/25/Let-GPU-Engage/">Let GPU Engage</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>After failing to call all the cores of our CPUs to run the process, my  teammates and I found another way to increase our speed of training. In the past we were using Tensorflow for CPU, which was easy to install, however there is another version which is speceifically designed for Nvidia GPUs. It was really hard to install the GPU version, we needed to install CUDA, cuDNN, and  reinstall an older Python 3.6. One of our teammate gave it up in the end , another one and I made it after retrying several times as the versions of CUDA and cuDNN matters A LOT. Anyway, now our computers could use GPUs to process the images. My RTX2070Super finished the task in 50 minutes, which was more than ten times shorter than the time taken by CPU. This will definitely help us a lot in the competition as we can train our model more times than the other teams.</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2020/04/25/Let-GPU-Engage/" data-id="ck9fsjsab0000uk2md2qfcwr3" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-Multithread-Processing" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/04/23/Multithread-Processing/" class="article-date">
+  <time datetime="2020-04-23T13:23:40.000Z" itemprop="datePublished">2020-04-23</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/04/23/Multithread-Processing/">Multi-thread Processing</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>In the past several weeks I was participating in a challenge to train a model for automated garbage classification. Together with two of my classmates, I used inception_v3 to process the images. We had a training set which contains 10,000 pictures which required us to run the program for more than 10 hours each time. Initially I thought that it was because of the huge number of  image, or maybe the performance of my PC is just not good enough. However, later I noticed  that while running the program the CPU fan seemed to be working slowly which means the CPU load is low. After checking Ryzen Master I realized  that only two of the eight cores of my CPU is participating. I discussed this problem with my teammates and we spent several days trying to edit the model in order to let it use all the threads of our CPUs until we found out that this has been a problem that is way too hard for us to solve. Even some games which were developed by hundreds of professional programmers, perform poorly in using multiple threads. Wish that someday we would be able to make it.</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2020/04/23/Multithread-Processing/" data-id="ck9fsjsae0001uk2me0eu0dfg" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-海华-AI挑战赛" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2020/04/19/%E6%B5%B7%E5%8D%8E-AI%E6%8C%91%E6%88%98%E8%B5%9B/" class="article-date">
@@ -264,6 +338,14 @@
       <ul>
         
           <li>
+            <a href="/2020/04/25/Let-GPU-Engage/">Let GPU Engage</a>
+          </li>
+        
+          <li>
+            <a href="/2020/04/23/Multithread-Processing/">Multi-thread Processing</a>
+          </li>
+        
+          <li>
             <a href="/2020/04/19/%E6%B5%B7%E5%8D%8E-AI%E6%8C%91%E6%88%98%E8%B5%9B/">海华 AI挑战赛</a>
           </li>
         
@@ -273,10 +355,6 @@
         
           <li>
             <a href="/2020/03/24/OverClock/">OverClock</a>
-          </li>
-        
-          <li>
-            <a href="/2020/03/23/Desktop-Testing/">Desktop Testing</a>
           </li>
         
       </ul>
