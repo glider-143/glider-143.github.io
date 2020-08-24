@@ -5,21 +5,19 @@
   
 
   
-  <title>Promotional Movie | Glider-143&#39;s Blog</title>
+  <title>Arduino-based Flight Simulator Peripheral? | Glider-143&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Two weeks after it was in the can, our promotional movie is now finally ready to go. Honestly, I am not quite satisfied with it. First, unlike the previous video which was edited by one of my classmat">
+  <meta name="description" content="Today I, with my friends, began to work on the motors in our cars. We’ve learned how to control them with analogue signals and our cars could finally run. However this is not what I wanna talk about r">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Promotional Movie">
-<meta property="og:url" content="http://yoursite.com/2020/07/01/Promotional-Movie/index.html">
+<meta property="og:title" content="Arduino-based Flight Simulator Peripheral?">
+<meta property="og:url" content="http://yoursite.com/2020/08/24/Arduino-based-Flight-Simulator-Peripheral/index.html">
 <meta property="og:site_name" content="Glider-143&#39;s Blog">
-<meta property="og:description" content="Two weeks after it was in the can, our promotional movie is now finally ready to go. Honestly, I am not quite satisfied with it. First, unlike the previous video which was edited by one of my classmat">
+<meta property="og:description" content="Today I, with my friends, began to work on the motors in our cars. We’ve learned how to control them with analogue signals and our cars could finally run. However this is not what I wanna talk about r">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="http://yoursite.com/2020/07/01/Promotional-Movie/TheProject.jpg">
-<meta property="article:published_time" content="2020-07-01T11:02:28.000Z">
-<meta property="article:modified_time" content="2020-07-19T03:33:19.608Z">
+<meta property="article:published_time" content="2020-08-24T12:02:53.000Z">
+<meta property="article:modified_time" content="2020-08-24T12:53:47.425Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://yoursite.com/2020/07/01/Promotional-Movie/TheProject.jpg">
   
     <link rel="alternate" href="/atom.xml" title="Glider-143&#39;s Blog" type="application/atom+xml">
   
@@ -72,10 +70,10 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-Promotional-Movie" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-Arduino-based-Flight-Simulator-Peripheral" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2020/07/01/Promotional-Movie/" class="article-date">
-  <time datetime="2020-07-01T11:02:28.000Z" itemprop="datePublished">2020-07-01</time>
+    <a href="/2020/08/24/Arduino-based-Flight-Simulator-Peripheral/" class="article-date">
+  <time datetime="2020-08-24T12:02:53.000Z" itemprop="datePublished">2020-08-24</time>
 </a>
     
   </div>
@@ -86,7 +84,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      Promotional Movie
+      Arduino-based Flight Simulator Peripheral?
     </h1>
   
 
@@ -94,15 +92,22 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Two weeks after it was in the can, our promotional movie is now finally ready to go. Honestly, I am not quite satisfied with it. First, unlike the previous video which was edited by one of my classmates, this one did not require any creativity. I just put all the footages that I shot together, adding subtitles, audio tracks and a background music. It was boring and time consuming, you can see how many pieces there was in the project file. On the other hand, our last video was more like an advertisement with fancy transitions, upgrades, after effects and more aerials (in fact, the aerial scenes in this video were ‘borrowed’ from that one.), which, I think, would be more interesting while editing it.</p>
-<p>Moreover, our teacher, also the director of this video, did not communicate properly with the students who appeared on camera. Most of them could not even remember the words to say clearly and sometimes made ambiguous statements, which greatly affected the results of this video.</p>
-<p>Anyway, now my work is done, and it did bring me some sense of achievement. I wish that I could have a more interesting task next time.</p>
-<p><img src="/2020/07/01/Promotional-Movie/TheProject.jpg" alt="Project File"> </p>
+        <p>Today I, with my friends, began to work on the motors in our cars. We’ve learned how to control them with analogue signals and our cars could finally run. However this is not what I wanna talk about right now. It has inspired me to something else.</p>
+<p>I’ve been playing Microsoft Flight Simulator 2020 since the day before yesterday. Well, I’d rather say learning it because it was really, really complicated. It was almost impossible to control a Cessna 172S (probably the most easy-to-control aircraft in this game) using mouse and keyboard. Luckily I had an old joystick (older than me!) from my dad, a sidewinder precision 2, which made it a little easier to control my 172s. However, it was far from enough, I still need rudder pedals, a throttle, and many other peripherals for better experience. Sadly, they are costly. I probably cannot buy them, but I have an Arduino Nano, and it receives analogue signals and converts them into digital signals. If there are slide potentiometers which could be connected to arduino, then it should be possible for me to build, at least, a throttle and a mixing ratio controller.</p>
+<p>So here is my idea, the components I will need, I think, are:</p>
+<ol>
+<li>Two slide potentiometers, which have distance of travel of about 10 centimeters, as analogue inputs for throttle and mixting ratio controller. </li>
+<li>An Arduino Leonardo development board. The Nano one I’m using now for my car wouldn’t be suitable because Leonardo uses the USB communication function of ATmega32u4 which allows it to act as keyboards and mouses, while Nano doesn’t. Also, Leonardo supports 12 analogue inputs.</li>
+<li>Since there are 12 analogue inputs, other than throttle and mixing ratio controller, I can possibly add a trim wheel or one more throttle in case that I wanna try liners with two engines in the future. I will think about this later, now I am not even sure if the throttle could work or not.</li>
+<li>Cases, panels, lights,buttons, anything which would make it look better. I think I can 3-D print these things.</li>
+</ol>
+<p>Then I need to write a program for my peripheral. Honestly, I am not sure how to do it. I’ve spent an hour or so to look for solutions on github and some other websites. There were people who made joysticks using Arduino, but it seems that few were interested in throttles and other stuff. The only things I know now, is C++ would be OK for my purpose, and it is quite similar to C, which I’ve been learning these days. Also, communication between the peripheral and my PC would be based on USB-HID protocal. These are all I know now, it is going to be difficult, and I can probably rely on myself only. But I will try my best. After building my car, I’m going to start to work on this.</p>
+<p>By the way, Flight Simulator 2020 is really fascinating. Even if you have no interests in flying, it is wonderful to enjoy the scenery around the world in this game. It is going to be the best game of 2020, I think.</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/07/01/Promotional-Movie/" data-id="ckdx02aug0007yk02heas1l78" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2020/08/24/Arduino-based-Flight-Simulator-Peripheral/" data-id="cke8iuwtv000058021o8p5l9g" class="article-share-link">Share</a>
       
       
     </footer>
@@ -111,19 +116,10 @@
     
 <nav id="article-nav">
   
-    <a href="/2020/07/25/Over-Clock-Part-II/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          OverClock Part II
-        
-      </div>
-    </a>
   
-  
-    <a href="/2020/06/08/Got-my-PSP-fixed/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2020/08/16/Begin-to-print/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">Got my PSP fixed!</div>
+      <div class="article-nav-title">Begin to print</div>
     </a>
   
 </nav>
